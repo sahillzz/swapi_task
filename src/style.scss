@@ -1,0 +1,43 @@
+@font-face {
+font-family: "Starjedi";
+src: url("http://localhost:8080//Starjedi.ttf") format("ttf");
+}
+
+body{
+  background-color: #1e1d24;
+}
+
+.nav{
+  padding: 0.3% 1% 1% 1%;
+}
+.listGroup{
+  margin-top: 10px;
+    overflow-x: scroll;
+    height:800px
+}
+.listGroup::-webkit-scrollbar {
+  display: none;
+}
+.itemContainer{
+  margin: 1%;
+}
+.itembar{
+  text-align: left;
+  height: 50px;
+  background-color: rgba(0,0,0,.2);
+   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: #ffe81f;
+}
+.form{
+  color: white;
+  border-color: #FFC107;
+  border-style: solid;
+  border-radius: 25px;
+  padding: 5% 10% 5% 10%;
+  margin-top: 20%;
+}
+.progress-bar{
+  font-weight: 600;
+  text-align: left;
+}
