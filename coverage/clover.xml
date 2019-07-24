@@ -1,45 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1563741373485" clover="3.2.0">
-  <project timestamp="1563741373486" name="All files">
-    <metrics statements="27" coveredstatements="27" conditionals="17" coveredconditionals="11" methods="13" coveredmethods="7" elements="57" coveredelements="45" complexity="0" loc="27" ncloc="27" packages="2" files="2" classes="2"/>
-    <package name="components">
-      <metrics statements="20" coveredstatements="20" conditionals="17" coveredconditionals="11" methods="6" coveredmethods="6"/>
-      <file name="Login.js" path="C:\projects\boilerplate\boilerplate_react_redux\src\components\Login.js">
-        <metrics statements="20" coveredstatements="20" conditionals="17" coveredconditionals="11" methods="6" coveredmethods="6"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="27" count="6" type="stmt"/>
-        <line num="28" count="6" type="stmt"/>
-        <line num="29" count="6" type="stmt"/>
-        <line num="30" count="6" type="stmt"/>
-        <line num="31" count="6" type="stmt"/>
-        <line num="35" count="6" type="cond" truecount="3" falsecount="0"/>
-        <line num="38" count="6" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="48" count="6" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="89" count="1" type="stmt"/>
-        <line num="90" count="2" type="stmt"/>
-        <line num="93" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="components.store">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
-      <file name="actions.js" path="C:\projects\boilerplate\boilerplate_react_redux\src\components\store\actions.js">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-      </file>
-    </package>
+<coverage generated="1563983124131" clover="3.2.0">
+  <project timestamp="1563983124131" name="All files">
+    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
   </project>
 </coverage>

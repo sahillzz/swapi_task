@@ -15,6 +15,7 @@ export const error = handleActions({
     }),
 
     ERROR: (state, action) => {
+      console.log(action, 'ssss');
       return ({
         error: action.data,
         isLoading: state.isLoading

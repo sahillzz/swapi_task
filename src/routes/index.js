@@ -10,8 +10,8 @@ const routes = (
     <NavBar />
     <ErrorAlert />
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/login" component={Login} />
+      <Route exact path="/" key='1' component={Home} />
+      <Route path="/login" key='2' component={Login} />
     </Switch>
   </div>
 )

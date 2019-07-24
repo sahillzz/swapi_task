@@ -25,13 +25,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'))
 })
-//
-// app.get('/xx', (req, res) => {
-//     axios.get('https://swapi.co/api/people')
-//     .then((e)=>res.json(e.data))
-//     .catch((error)=>res.send(error));
-//
-// });
+
 
 app.post('/login', (req, res)=>{
   const data = axios.get('https://swapi.co/api/people',{
@@ -43,9 +37,9 @@ app.post('/login', (req, res)=>{
       e.data.results[0].name.replace(/ /g,'').toLowerCase() == req.body.name.replace(/ /g,'').toLowerCase() ?(
         e.data.results[0].birth_year == req.body.password ?
           (res.send("success")):(
-            res.status(500).send({ error: "Incorrect Password" }))
+            res.status(200).send({ error: "Incorrect Password" }))
       ):(
-        res.status(500).send({ error: "No Match" })
+        res.status(200).send({ error: "No Match" })
       )
     );
   })
@@ -58,25 +52,3 @@ app.listen(8080, (err) => {
   }
   console.log('Listening at http://localhost:8080') // eslint-disable-line no-console
 })
-
-
-
-// (username, password, done){
-//
-// }
-//
-//
-// passport.use(new LocalStrategy(
-//   function(username, password, done) {
-//     User.findOne({ username: username }, function(err, user) {
-//       if (err) { return done(err); }
-//       if (!user) {
-//         return done(null, false, { message: 'Incorrect username.' });
-//       }
-//       if (!user.validPassword(password)) {
-//         return done(null, false, { message: 'Incorrect password.' });
-//       }
-//       return done(null, user);
-//     });
-//   }
-// ));

@@ -2,8 +2,9 @@ import {call, put, takeEvery, takeLatest} from 'redux-saga/effects';
 import axios from "axios";
 import {searchResult, loginToken, nextPageResult} from "../components/store/actions";
 import {error, loading} from '../redux/actions';
+import _ from 'lodash';
 
-const api = (api, type, params) => {
+export const api = (api, type, params) => {
   switch (type) {
     case 'get':
       return axios.get(api, {params}).then(res => res).catch(error => {
@@ -24,7 +25,9 @@ export function* login(action) {
     yield put(loading(true));
     const data = yield call(api, 'http://localhost:8080/login', 'post', action.payload);
     yield put(loginToken(data));
-    yield put(error({}));
+    !_.has(data.data, 'error')
+      ? yield put(error({}))
+      : yield put(error(data.data.error))
     yield put(loading(false));
   } catch (e) {
     yield put(error(e.response.data.error));

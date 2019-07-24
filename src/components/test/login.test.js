@@ -22,38 +22,38 @@ describe('select_actions', () => {
 
 });
 
-describe("MyComponent", () => {
-it("should render my component", () => {
-const tree = renderer.create(<Login />).toJSON();
-});
-it('calls onSubmit prop function when form is submitted', () => {
-  const onSubmitFn = jest.fn();
-  const wrapper = mount(
-    <Provider store={store}>
-      <Login onSubmit={(onSubmitFn)}/>
-    </Provider>
-  );
-  console.log(wrapper.find(handleSubmit), 'adasdasdasd');
-    expect(wrapper.find('input').length).toEqual(2);
-    expect(wrapper.props().children.props.onSubmit).toBeDefined();
-  const form = wrapper.find('form');
-  const input = wrapper.find('input');
-  expect(form).toHaveLength(1);
-  expect(input).toHaveLength(2);
-  input.at(0).simulate('change', {target:{value: 'Luke skywalker'}});
-    input.at(1).simulate('change', {target:{value: '19BBY'}});
-  form.simulate("change", {username: "Luke skywalker", password: "19BBY"});
-  form.simulate('submit');
-  expect(input.find(input.at(0)).prop('value')).toEqual("Luke skywalker");
-});
-
-it('onsub', ()=>{
-  const onSubmitFn = jest.fn();
-  const wrapper = mount(
-    <Provider store={store}>
-      <Login onSubmit={(onSubmitFn)}/>
-    </Provider>);
-       expect(wrapper.props().children.props.onSubmit).toBeDefined();
-})
-
-})
+// describe("MyComponent", () => {
+// it("should render my component", () => {
+// const tree = renderer.create(<Login />).toJSON();
+// });
+// it('calls onSubmit prop function when form is submitted', () => {
+//   const onSubmitFn = jest.fn();
+//   const wrapper = mount(
+//     <Provider store={store}>
+//       <Login onSubmit={(onSubmitFn)}/>
+//     </Provider>
+//   );
+//   console.log(wrapper.find(handleSubmit), 'adasdasdasd');
+//     expect(wrapper.find('input').length).toEqual(2);
+//     expect(wrapper.props().children.props.onSubmit).toBeDefined();
+//   const form = wrapper.find('form');
+//   const input = wrapper.find('input');
+//   expect(form).toHaveLength(1);
+//   expect(input).toHaveLength(2);
+//   input.at(0).simulate('change', {target:{value: 'Luke skywalker'}});
+//     input.at(1).simulate('change', {target:{value: '19BBY'}});
+//   form.simulate("change", {username: "Luke skywalker", password: "19BBY"});
+//   form.simulate('submit');
+//   expect(input.find(input.at(0)).prop('value')).toEqual("Luke skywalker");
+// });
+//
+// it('onsub', ()=>{
+//   const onSubmitFn = jest.fn();
+//   const wrapper = mount(
+//     <Provider store={store}>
+//       <Login onSubmit={(onSubmitFn)}/>
+//     </Provider>);
+//        expect(wrapper.props().children.props.onSubmit).toBeDefined();
+// })
+//
+// })

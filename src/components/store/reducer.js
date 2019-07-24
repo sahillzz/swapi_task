@@ -26,6 +26,7 @@ export const reducer = handleActions(
   },
     LOGIN_TOKEN:(state, action) =>{
       const { data } = action.data;
+      console.log(action);
       if (data==="success") {
         return({
           token:true,
