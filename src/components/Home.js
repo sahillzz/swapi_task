@@ -55,8 +55,8 @@ const Home = (props) => {
             </Col>
           </Row>
         </React.Fragment>)
-        : (<Row >
-          <Col md="auto">Login To Continue</Col>
+        : (<Row className="justify-content-md-center">
+          <Col md="auto" style={{'color':'white', 'fontSize':'x-Large'}}>Login To Continue</Col>
         </Row>)
     }
   </Container>)

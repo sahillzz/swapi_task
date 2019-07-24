@@ -8,7 +8,7 @@
     "feathers"
   ],
   "scripts": {
-    "test": " jest --coverage --watch",
+    "test": " jest --coverage",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "dev": "nodemon src/",
     "build": "webpack --mode production",
